@@ -1,0 +1,8 @@
+# Set defaults
+* text=auto
+
+# Fix Visual Studio Code config syntax highlighting on GitHub to allow comments
+.vscode/*.json linguist-language=JSON-with-Comments
+
+# Highlight .txt files as AdBlock rules
+*.txt linguist-language=AdBlock linguist-detectable

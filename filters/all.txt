@@ -1,0 +1,10 @@
+! Title: Zep's Filters
+! Expires: 3 days
+! Last modified: 25 October 2023
+! Homepage: https://github.com/WhistlingZephyr/zeps-filters
+! Issues: https://github.com/WhistlingZephyr/zeps-filters/Issues
+! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
+! Description: Removes some annoyances and distracting elements from certain sites
+
+!#include ai.txt
+!#include discord.txt

@@ -1,0 +1,37 @@
+{
+  "name": "zeps-filters",
+  "version": "1.0.0",
+  "description": "Adblocker filter list for removing certain annoyances and distractions",
+  "main": "index.js",
+  "scripts": {
+    "lint:filters": "aglint",
+    "lint:md": "markdownlint --ignore-path ./.gitignore \"**/*.md\"",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint": "pnpm run \"/^lint:.*/\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhistlingZephyr/zeps-filters.git"
+  },
+  "keywords": [
+    "ublock-origin",
+    "adguard",
+    "filterlist",
+    "annoyances",
+    "discord",
+    "distracting-elements"
+  ],
+  "author": "WhistlingZephyr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhistlingZephyr/zeps-filters/issues"
+  },
+  "homepage": "https://github.com/WhistlingZephyr/zeps-filters#readme",
+  "dependencies": {
+    "@adguard/aglint": "^2.0.5",
+    "editorconfig-checker": "^5.1.1",
+    "husky": "^8.0.3",
+    "markdownlint-cli": "^0.37.0"
+  }
+}

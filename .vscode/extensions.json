@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "adguard.adblock",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "github.vscode-github-actions"
+    ]
+}

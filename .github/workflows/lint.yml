@@ -1,0 +1,42 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    env:
+      # https://github.com/github/vscode-github-actions/issues/222#issuecomment-1773263030
+      STORE_PATH:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test ${{ github.sha }} of ${{ github.repository }}
+        uses: actions/checkout@v3
+      - name: Setup Node.JS
+        uses: actions/setup-node@v3
+        with:
+          node-version: "latest"
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: false
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm run lint

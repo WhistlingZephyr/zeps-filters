@@ -1,0 +1,39 @@
+! Title: Zep's Filters - Discord
+! Expires: 3 days
+! Last modified: 25 October 2023
+! Homepage: https://github.com/WhistlingZephyr/zeps-filters
+! Issues: https://github.com/WhistlingZephyr/zeps-filters/Issues
+! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
+! Description: Removes some annoyances from Discord's UI
+
+# Remove the download client button
+discord.com##[data-list-id="guildsnav"] > [class^="scroller"] > [class^="listItem-"]:nth-last-of-type(2)
+discord.com##[data-list-id="guildsnav"] > [class^="scroller"] > [class^="listItem-"]:nth-last-of-type(3)
+
+# Remove the auto-focusing help hyperlink in quick switcher
+discord.com##[class^="protip-"] > div:last-child > a[href="https://support.discord.com/hc/en-us/articles/115000070311"]
+
+# Remove the voice chat toast
+discord.com##div[role="button"][class^="bar"]
+
+# Remove badge from linked roles
+discord.com##[id^="message-username-"] [aria-label="Click to view"]
+
+# Remove add super reaction buttons
+discord.com##[aria-label="Message Actions"] [aria-label="Add Super Reaction"]
+discord.com##[aria-roledescription="Message"] [aria-label="Add Super Reaction"]
+
+# Remove nitro gifting button in textbox
+discord.com##[aria-label="Send a gift"]
+
+# Remove nitro tab badge in homescreen
+discord.com##[class*="nitroTabBadgeContainer-"]
+
+# Remove "Go to shop" banner on profile popout
+discord.com##[class^="containerWrapper-"]:has([aria-label="Go to Shop"])
+
+# Remove profile animations/effects
+discord.com##[class^="profileEffects-"]
+
+# Remove avatar decorations
+discord.com##[class^="avatarDecoration-"]
