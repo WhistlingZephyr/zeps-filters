@@ -6,14 +6,14 @@
 ! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
 ! Description: Removes some annoyances from Discord's UI
 
-# Remove the download client button
+# Remove download client button
 discord.com##[data-list-id="guildsnav"] > [class^="scroller"] > [class^="listItem-"]:nth-last-of-type(2)
 discord.com##[data-list-id="guildsnav"] > [class^="scroller"] > [class^="listItem-"]:nth-last-of-type(3)
 
-# Remove the auto-focusing help hyperlink in quick switcher
+# Remove auto-focusing help hyperlink in quick switcher
 discord.com##[class^="protip-"] > div:last-child > a[href="https://support.discord.com/hc/en-us/articles/115000070311"]
 
-# Remove the voice chat toast
+# Remove voice chat toast
 discord.com##div[role="button"][class^="bar"]
 
 # Remove badge from linked roles
@@ -29,7 +29,7 @@ discord.com##[aria-label="Send a gift"]
 # Remove nitro tab badge in homescreen
 discord.com##[class*="nitroTabBadgeContainer-"]
 
-# Remove "Go to shop" banner on profile popout
+# Remove go to shop banner on profile popout
 discord.com##[class^="containerWrapper-"]:has([aria-label="Go to Shop"])
 
 # Remove profile animations/effects

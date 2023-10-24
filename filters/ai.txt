@@ -7,7 +7,7 @@
 ! Description: Removes distracting AI-related banners and badges from certain sites
 
 
-# StackOverflow
+# Stack Overflow
 stackoverflow.com###js-ai-search-alpha-popover
 
 # MDN Web Docs
