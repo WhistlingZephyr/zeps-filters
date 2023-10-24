@@ -4,13 +4,19 @@ This repository hosts filter lists for uBlock Origin/Adblock Plus/AdGuard and si
 
 ## Installation
 
-- **All: [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/all.txt&title=Zep%27s%20Filters) `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/all.txt`**
-- Discord annoyances: [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/discord.txt&title=Zep's%20Filters%20-%20Discord) `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/discord.txt`
-- AI-related distractions: [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/ai.txt&title=Zep's%20Filters%20-%20AI) `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/ai.txt`
+| Name | Subscribe button | Direct link |
+| --- | --- | --- |
+| **All** | [**(Subscribe)**](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/all.txt&title=Zep%27s%20Filters) | **`https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/all.txt`** |
+| Discord annoyances | [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/discord.txt&title=Zep's%20Filters%20-%20Discord) | `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/discord.txt` |
+AI-related distractions | [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/ai.txt&title=Zep's%20Filters%20-%20AI) | `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/ai.txt`
 
 ## Tips
 
 - You can block sending typing events to Discord by putting `||discord.com/api/*/typing` in your filter lists.
+
+## Development
+
+See [DEVELOPMENT.md](DEVELOPMENT.md)
 
 ## Related projects
 
