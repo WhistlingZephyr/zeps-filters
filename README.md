@@ -16,7 +16,7 @@ AI-related distractions | [(Subscribe)](https://subscribe.adblockplus.org/?locat
 
 ## Development
 
-See [DEVELOPMENT.md](DEVELOPMENT.md)
+See [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ## Related projects
 
