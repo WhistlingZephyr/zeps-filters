@@ -23,6 +23,15 @@ discord.com##[id^="message-username-"] [aria-label="Click to view"]
 discord.com##[aria-label="Message Actions"] [aria-label="Add Super Reaction"]
 discord.com##[aria-roledescription="Message"] [aria-label="Add Super Reaction"]
 
+# Remove super reaction effects
+discord.com##[class^="effectsWrapper_"]
+
+# Remove super reaction shake
+discord.com##[class^="reaction_"]:watch-attr(class):remove-class(/shakeReaction__\S+/)
+
+# Remove super reaction glow
+discord.com##[class^="reactionInner_"] > [class^="burstGlow_"]
+
 # Remove nitro gifting button in textbox
 discord.com##[aria-label="Send a gift"]
 
