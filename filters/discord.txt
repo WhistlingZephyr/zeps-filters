@@ -48,7 +48,7 @@ discord.com##[class^="containerWrapper_"]:has([aria-label="Go to Shop"])
 discord.com##[class^="profileEffects_"]
 
 # Remove avatar decorations
-discord.com##[class^="avatarDecoration_"]
+discord.com##:not([class^="shopCard_"]) > div > [class^="avatarDecoration_"]
 
 # Remove button shining
 discord.com##[class^="shineContainer_"]
