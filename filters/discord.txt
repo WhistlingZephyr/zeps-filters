@@ -7,11 +7,11 @@
 ! Description: Removes some annoyances from Discord's UI
 
 # Remove download client button
-discord.com##[data-list-id="guildsnav"] > [class^="scroller"] > [class^="listItem-"]:nth-last-of-type(2)
-discord.com##[data-list-id="guildsnav"] > [class^="scroller"] > [class^="listItem-"]:nth-last-of-type(3)
+discord.com##[data-list-id="guildsnav"] > [class^="scroller_"] > [class^="listItem_"]:nth-last-of-type(2)
+discord.com##[data-list-id="guildsnav"] > [class^="scroller_"] > [class^="listItem_"]:nth-last-of-type(3)
 
 # Remove auto-focusing help hyperlink in quick switcher
-discord.com##[class^="protip-"] > div:last-child > a[href="https://support.discord.com/hc/en-us/articles/115000070311"]
+discord.com##[class^="protip_"] > div:last-child > a[href="https://support.discord.com/hc/en-us/articles/115000070311"]
 
 # Remove voice chat toast
 discord.com##div[role="button"][class^="bar"]
@@ -27,13 +27,13 @@ discord.com##[aria-roledescription="Message"] [aria-label="Add Super Reaction"]
 discord.com##[aria-label="Send a gift"]
 
 # Remove nitro tab badge in homescreen
-discord.com##[class*="nitroTabBadgeContainer-"]
+discord.com##[class*="nitroTabBadgeContainer_"]
 
 # Remove go to shop banner on profile popout
-discord.com##[class^="containerWrapper-"]:has([aria-label="Go to Shop"])
+discord.com##[class^="containerWrapper_"]:has([aria-label="Go to Shop"])
 
 # Remove profile animations/effects
-discord.com##[class^="profileEffects-"]
+discord.com##[class^="profileEffects_"]
 
 # Remove avatar decorations
-discord.com##[class^="avatarDecoration-"]
+discord.com##[class^="avatarDecoration_"]
