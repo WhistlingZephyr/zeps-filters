@@ -22,3 +22,4 @@ See [DEVELOPMENT.md](DEVELOPMENT.md).
 
 - Web Annoyances Ultralist: <https://github.com/yourduskquibbles/webannoyances/>
 - Discord Toggle Sidebar: <https://github.com/WhistlingZephyr/discord-toggle-sidebar/>
+- .
