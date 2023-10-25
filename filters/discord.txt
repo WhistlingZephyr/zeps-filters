@@ -49,3 +49,6 @@ discord.com##[class^="profileEffects_"]
 
 # Remove avatar decorations
 discord.com##[class^="avatarDecoration_"]
+
+# Remove button shining
+discord.com##[class^="shineContainer_"]
