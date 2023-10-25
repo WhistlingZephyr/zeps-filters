@@ -44,6 +44,9 @@ discord.com##[class*="nitroTabBadgeContainer_"]
 # Remove go to shop banner on profile popout
 discord.com##[class^="containerWrapper_"]:has([aria-label="Go to Shop"])
 
+# Remove go to shop banner in profile customization
+discord.com###profile-customization-tab > [class^="container_"]
+
 # Remove profile animations/effects
 discord.com##[class^="profileEffects_"]
 
