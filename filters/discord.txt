@@ -1,6 +1,6 @@
 ! Title: Zep's Filters - Discord
 ! Expires: 3 days
-! Last modified: 25 October 2023
+! Last modified: 26 October 2023
 ! Homepage: https://github.com/WhistlingZephyr/zeps-filters
 ! Issues: https://github.com/WhistlingZephyr/zeps-filters/Issues
 ! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
