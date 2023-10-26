@@ -55,3 +55,6 @@ discord.com##:not([class^="shopCard_"]) > div > [class^="avatarDecoration_"]
 
 # Remove button shining
 discord.com##[class^="shineContainer_"]
+
+# Remove random nitro-related popouts
+discord.com##[id^="popout_"]:has-text("Maybe later")
