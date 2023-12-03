@@ -8,9 +8,6 @@ dependencies:
   '@adguard/aglint':
     specifier: ^2.0.5
     version: 2.0.5
-  editorconfig-checker:
-    specifier: ^5.1.1
-    version: 5.1.1
   husky:
     specifier: ^8.0.3
     version: 8.0.3
@@ -297,12 +294,6 @@ packages:
 
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
-    dev: false
-
-  /editorconfig-checker@5.1.1:
-    resolution: {integrity: sha512-IBE7K48+6jLlhfmJ0TOTjogvO9Asw+4B8CoKn71KtZ8Qrvc7/WgrMyJxQRSdq6VGdh+D65/6JuQuHioMs2O1sw==}
-    engines: {node: '>=18.0.0'}
-    hasBin: true
     dev: false
 
   /emoji-regex@8.0.0:

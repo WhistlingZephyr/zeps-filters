@@ -6,7 +6,6 @@
   "scripts": {
     "lint:filters": "aglint",
     "lint:md": "markdownlint --ignore-path ./.gitignore \"**/*.md\"",
-    "lint:editorconfig": "editorconfig-checker",
     "lint": "pnpm run \"/^lint:.*/\"",
     "prepare": "husky install"
   },
@@ -30,7 +29,6 @@
   "homepage": "https://github.com/WhistlingZephyr/zeps-filters#readme",
   "dependencies": {
     "@adguard/aglint": "^2.0.5",
-    "editorconfig-checker": "^5.1.1",
     "husky": "^8.0.3",
     "markdownlint-cli": "^0.37.0"
   }
