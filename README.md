@@ -9,6 +9,7 @@ This repository hosts filter lists for uBlock Origin/Adblock Plus/AdGuard and si
 | **All** | [**(Subscribe)**](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/all.txt&title=Zep%27s%20Filters) | **`https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/all.txt`** |
 | Discord annoyances | [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/discord.txt&title=Zep's%20Filters%20-%20Discord) | `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/discord.txt` |
 AI-related distractions | [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/ai.txt&title=Zep's%20Filters%20-%20AI) | `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/ai.txt`
+URL cleaner | [(Subscribe)](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/url-cleaner.txt&title=Zep's%20Filters%20-%20URL%20cleaner) | `https://raw.githubusercontent.com/WhistlingZephyr/zeps-filters/main/filters/url-cleaner.txt`
 
 ## Tips
 
@@ -22,3 +23,4 @@ See [DEVELOPMENT.md](DEVELOPMENT.md).
 
 - Web Annoyances Ultralist: <https://github.com/yourduskquibbles/webannoyances/>
 - Discord Toggle Sidebar: <https://github.com/WhistlingZephyr/discord-toggle-sidebar/>
+- Actually Legitimate URL Shortener Tool: <https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener.txt>
