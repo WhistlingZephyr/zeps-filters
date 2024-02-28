@@ -58,3 +58,6 @@ discord.com##[class^="shineContainer_"]
 
 # Remove random nitro-related popouts
 discord.com##[id^="popout_"]:has-text("Maybe later")
+
+# Remove "new" badge from Shop
+discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > div[class^="textBadge_"]
