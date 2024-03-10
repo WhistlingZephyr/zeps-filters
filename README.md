@@ -14,6 +14,12 @@ This repository hosts filter lists for uBlock Origin/Adblock Plus/AdGuard and si
 ## Tips
 
 - You can block sending typing events to Discord by putting `||discord.com/api/*/typing` in your filter lists.
+-
+    You can remove blocked messages entirely by putting the following in your filters:
+
+    ```adblock
+        discord.com##[class^="groupStart_"]:has([class^="wrapper_"] > [class^="contents_"] [class^="blockedSystemMessage_"])
+    ```
 
 ## Development
 
