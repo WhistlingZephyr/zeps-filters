@@ -18,7 +18,7 @@ This repository hosts filter lists for uBlock Origin/Adblock Plus/AdGuard and si
     You can remove blocked messages entirely by putting the following in your filters:
 
     ```adblock
-        discord.com##[class^="groupStart_"]:has([class^="wrapper_"] > [class^="contents_"] [class^="blockedSystemMessage_"])
+        discord.com##[class^="groupStart_"]:has([class^="wrapper_"] > [class^="contents_"] > [class^="blockedSystemMessage_"])
     ```
 
 ## Development
