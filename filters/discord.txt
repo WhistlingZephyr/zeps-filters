@@ -60,7 +60,7 @@ discord.com##[class^="shineContainer_"]
 discord.com##[id^="popout_"]:has-text("Maybe later")
 
 # Remove "new" badge from Shop
-discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > div[class^="textBadge_"]
+discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > div[class^="newBadge_"]
 
 # Remove locked emojis appearing in suggestions
 discord.com##[data-list-id="channel-autocomplete"]:has(> [class*="premiumSectionDivider_"] > [class^="nitroTopDividerLockContainer_"]) > :is([role="option"][class*="premiumEmoji_"], [class^="premiumHeader_"], [class*="premiumSectionDivider_"])
