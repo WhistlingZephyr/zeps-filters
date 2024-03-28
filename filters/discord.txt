@@ -64,3 +64,9 @@ discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > div[class
 
 # Remove locked emojis appearing in suggestions
 discord.com##[data-list-id="channel-autocomplete"]:has(> [class*="premiumSectionDivider_"] > [class^="nitroTopDividerLockContainer_"]) > :is([role="option"][class*="premiumEmoji_"], [class^="premiumHeader_"], [class*="premiumSectionDivider_"])
+
+# Remove Shop button decorations
+discord.com##[aria-label="Direct Messages"] > li:has(a[href="/shop"]):style(background: none !important)
+
+# Remove Shop button hover animation
+discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > img
