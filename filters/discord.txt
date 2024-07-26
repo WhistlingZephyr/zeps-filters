@@ -39,7 +39,7 @@ discord.com##[class^="reactionInner_"] img:watch-attr(class):remove-class(/hideE
 discord.com##[aria-label="Send a gift"]
 
 # Remove nitro & shop tab badges in homescreen
-discord.com##a[data-list-item-id^="private-channels-"]:is([href^="/store"], [href^="/store"]) > div[class*="badge" i]
+discord.com##a[data-list-item-id^="private-channels-"]:is([href^="/store"], [href^="/shop"]) > div[class*="badge" i]
 
 # Remove go to shop banner on profile popout
 discord.com##[class^="containerWrapper_"]:has([aria-label="Go to Shop"])
