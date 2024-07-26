@@ -38,8 +38,8 @@ discord.com##[class^="reactionInner_"] img:watch-attr(class):remove-class(/hideE
 # Remove nitro gifting button in textbox
 discord.com##[aria-label="Send a gift"]
 
-# Remove nitro tab badge in homescreen
-discord.com##[class*="nitroTabBadgeContainer_"]
+# Remove nitro & shop tab badges in homescreen
+discord.com##a[data-list-item-id^="private-channels-"]:is([href^="/store"], [href^="/store"]) > div[class*="badge" i]
 
 # Remove go to shop banner on profile popout
 discord.com##[class^="containerWrapper_"]:has([aria-label="Go to Shop"])
@@ -58,9 +58,6 @@ discord.com##[class^="shineContainer_"]
 
 # Remove random nitro-related popouts
 discord.com##[id^="popout_"]:has-text("Maybe later")
-
-# Remove "new" badge from Shop
-discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > div[class^="newBadge_"]
 
 # Remove locked emojis appearing in suggestions
 discord.com##[data-list-id="channel-autocomplete"]:has(> [class*="premiumSectionDivider_"] > [class^="nitroTopDividerLockContainer_"]) > :is([role="option"][class*="premiumEmoji_"], [class^="premiumHeader_"], [class*="premiumSectionDivider_"])
