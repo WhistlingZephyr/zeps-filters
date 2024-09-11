@@ -79,3 +79,6 @@ discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > :is([clas
 # Remove member list recent activities
 discord.com##div[aria-label="Members"] > h3:has(+ div:not([class]))
 discord.com##div[aria-label="Members"] > div:not([class])
+
+# Remove app launcher icon in chat bar
+discord.com##form > div > div[class^="channelAppLauncher_"]
