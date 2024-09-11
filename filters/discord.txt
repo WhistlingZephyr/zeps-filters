@@ -70,7 +70,7 @@ discord.com###emoji-picker-grid div[class*="categorySectionNitroLocked_"]:style(
 discord.com###emoji-picker-grid div[class^="nitro"]
 
 # Remove emoji badge in emoji picker
-discord.com###emoji-picker-tab-panel > div[class^="emojiPicker_"] > div[class^="inspector_"] > div[class*="topGuildEmojiBadge_"]
+discord.com###emoji-picker-tab-panel > div[class^="emojiPicker_"] > div[class^="inspector_"] > div[class*="badgeLabel_"]
 
 # Remove locked emoji decoration in emoji picker
 discord.com###emoji-picker-grid div[class*="categorySectionNitroLocked_"]:style(background: none !important)
