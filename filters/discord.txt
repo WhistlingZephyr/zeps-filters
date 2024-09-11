@@ -69,6 +69,9 @@ discord.com##[data-list-id="channel-autocomplete"]:has(> [class*="premiumSection
 discord.com###emoji-picker-grid div[class*="categorySectionNitroLocked_"]:style(background: none !important)
 discord.com###emoji-picker-grid div[class^="nitro"]
 
+# Remove emoji badge in emoji picker
+discord.com###emoji-picker-tab-panel > div[class^="inspector"] > div[class*="topGuildEmojiBadge_"]
+
 # Remove Shop button decorations
 discord.com##[aria-label="Direct Messages"] > li:has(a[href="/shop"]):style(background: none !important)
 discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > :is([class*="badge" i], [class*="marketing" i], img)
