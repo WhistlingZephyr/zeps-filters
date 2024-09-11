@@ -65,3 +65,7 @@ discord.com##[data-list-id="channel-autocomplete"]:has(> [class*="premiumSection
 # Remove Shop button decorations
 discord.com##[aria-label="Direct Messages"] > li:has(a[href="/shop"]):style(background: none !important)
 discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > :is([class*="badge" i], [class*="marketing" i], img)
+
+# Remove member list recent activities
+discord.com##div[aria-label="Members"] > h3:has(+ div:not([class]))
+discord.com##div[aria-label="Members"] > div:not([class])
