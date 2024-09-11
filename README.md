@@ -21,6 +21,13 @@ This repository hosts filter lists for uBlock Origin/Adblock Plus/AdGuard and si
     discord.com##[class^="groupStart_"]:has([class^="wrapper_"] > [class^="contents_"] > [class^="blockedSystemMessage_"])
     ```
 
+-
+    Similarly you can remove the apps launcher icon from chat bar through:
+
+    ```adblock
+    discord.com##form > div > div[class^="channelAppLauncher_"]
+    ```
+
 ## Development
 
 See [DEVELOPMENT.md](DEVELOPMENT.md).
