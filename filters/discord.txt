@@ -1,6 +1,6 @@
 ! Title: Zep's Filters - Discord
 ! Expires: 3 days
-! Last modified: 11 September 2024
+! Last modified: 19 September 2024
 ! Homepage: https://github.com/WhistlingZephyr/zeps-filters
 ! Issues: https://github.com/WhistlingZephyr/zeps-filters/Issues
 ! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
@@ -83,3 +83,6 @@ discord.com##a[href="/shop"][data-list-item-id^="private-channels-"] > :is([clas
 # Remove member list recent activities
 discord.com##div[aria-label="Members"] > h3:has(+ div:not([class]))
 discord.com##div[aria-label="Members"] > div:not([class])
+
+# Remove emoji reaction button showing up without hover
+discord.com##div[aria-roledescription="Message"]:not(:hover) > div[id^="message-accessories-"] > div[id^="message-reactions-"] > div[aria-label="Add Reaction"]
