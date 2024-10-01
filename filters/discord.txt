@@ -86,3 +86,6 @@ discord.com##div[aria-label="Members"] > div:not([class])
 
 # Remove emoji reaction button showing up without hover
 discord.com##div[aria-roledescription="Message"]:not(:hover) > div[id^="message-accessories-"] > div[id^="message-reactions-"] > div[aria-label="Add Reaction"]
+
+# Remove nitro advertisement in emoji picker
+discord.com###emoji-picker-grid > div > div[class^="upsellContainer_"]
