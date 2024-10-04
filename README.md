@@ -34,7 +34,7 @@ You can add additional filters that this filter list doesn't activate by default
     You can remove quick access reactions with:
 
     ```adblock
-    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :is([aria-label^="Click to react with"], [class^="separator_"])
+    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :is(:has(~ [class^="separator_"]), [class^="separator_"])
     ```
 
 -
