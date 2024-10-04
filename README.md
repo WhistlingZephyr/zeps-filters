@@ -13,19 +13,35 @@ This repository hosts filter lists for uBlock Origin/Adblock Plus/AdGuard and si
 
 ## Tips
 
-- You can block sending typing events to Discord by putting `||discord.com/api/*/typing` in your filters.
+You can add additional filters that this filter list doesn't activate by default, e.g. for Discord:
+
+- You can block sending typing events with `||discord.com/api/*/typing`.
 -
-    You can remove blocked messages entirely by putting the following in your filters:
+    You can remove blocked messages entirely with:
 
     ```adblock
     discord.com##[class^="groupStart_"]:has([class^="wrapper_"] > [class^="contents_"] > [class^="blockedSystemMessage_"])
     ```
 
 -
-    Similarly you can remove the apps launcher icon from chat bar through:
+    You can remove the apps launcher icon from chat with:
 
     ```adblock
     discord.com##form > div > div[class^="channelAppLauncher_"]
+    ```
+
+-
+    You can remove quick access reactions with:
+
+    ```adblock
+    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :is([aria-label^="Click to react with"], [class^="separator_"])
+    ```
+
+-
+    Or you can remove everything except the more button from message quick access with:
+
+    ```adblock
+    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :not([aria-label="More"])
     ```
 
 ## Development
