@@ -7,8 +7,7 @@
 ! Description: Removes some annoyances from Discord's UI
 
 # Remove download client button
-discord.com##[data-list-id="guildsnav"] > [class^="scroller_"] > [class^="listItem_"]:nth-last-of-type(2)
-discord.com##[data-list-id="guildsnav"] > [class^="scroller_"] > [class^="listItem_"]:nth-last-of-type(3)
+discord.com##[data-list-id="guildsnav"] > [class^="itemsContainer_"] > [class^="scroller_"] > div:nth-last-child(2)
 
 # Remove auto-focusing help hyperlink in quick switcher
 discord.com##[class^="protip_"] > div:last-child > a[href="https://support.discord.com/hc/en-us/articles/115000070311"]
