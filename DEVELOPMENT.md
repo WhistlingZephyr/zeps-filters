@@ -4,7 +4,7 @@ This document describes the process of developing this application on your own c
 
 ## Getting started
 
-### Perquisites
+### Prerequisites
 
 - Git - <https://git-scm.com/>
 - Node.js - <https://nodejs.org/>
