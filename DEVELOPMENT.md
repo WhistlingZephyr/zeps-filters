@@ -16,6 +16,6 @@ This document describes the process of developing this application on your own c
 - First clone this repository to your own computer if you haven't already.
 - Run `pnpm install` in the project's directory.
 - Open this project with Visual Studio Code and download the recommended extensions
-    (refer to [.vscode/extensions.json](../.vscode/extensions.json) if you don't
+    (refer to [.vscode/extensions.json](./.vscode/extensions.json) if you don't
     automatically get a pop up).
 - To lint manually, run `pnpm run lint` in your terminal.
