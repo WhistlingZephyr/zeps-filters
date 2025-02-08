@@ -88,3 +88,10 @@ discord.com##div[aria-roledescription="Message"]:not(:hover) > div[id^="message-
 
 # Remove nitro advertisement in emoji picker
 discord.com###emoji-picker-grid > div > div[class^="upsellContainer_"]
+
+# Remove confetti effects
+discord.com###simple-confetti-canvas
+discord.com##html:watch-attr(class):remove-class(confetti-mode)
+discord.com##[data-flash] > li > [class^="emojiWrapper_"]
+discord.com##[data-flash]:remove-class(/[fF]lash/)
+discord.com##[aria-roledescription="Message"]:remove-class(/potioned|zalgo/)
