@@ -95,3 +95,6 @@ discord.com##html:watch-attr(class):remove-class(confetti-mode)
 discord.com##[data-flash] > li > [class^="emojiWrapper_"]
 discord.com##[data-flash]:remove-class(/[fF]lash/)
 discord.com##[aria-roledescription="Message"]:remove-class(/potioned|zalgo/)
+
+# Remove nitro shop offer badge
+discord.com##a[href="/store"] > div > div[class^="badgeContainer_"]
