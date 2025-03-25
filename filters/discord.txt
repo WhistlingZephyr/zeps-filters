@@ -1,13 +1,13 @@
 ! Title: Zep's Filters - Discord
 ! Expires: 3 days
-! Last modified: 19 September 2024
+! Last modified: 25 March 2025
 ! Homepage: https://github.com/WhistlingZephyr/zeps-filters
 ! Issues: https://github.com/WhistlingZephyr/zeps-filters/Issues
 ! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
 ! Description: Removes some annoyances from Discord's UI
 
 # Remove download client button
-discord.com##[data-list-id="guildsnav"] > [class^="itemsContainer_"] > [class^="scroller_"] > div:nth-last-child(2)
+discord.com##[data-list-id="guildsnav"] > [class^="itemsContainer_"] > [class*="scroller_"] > div:nth-last-child(2)
 
 # Remove auto-focusing help hyperlink in quick switcher
 discord.com##[class^="protip_"] > div:last-child > a[href="https://support.discord.com/hc/en-us/articles/115000070311"]
