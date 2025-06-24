@@ -104,3 +104,7 @@ discord.com##span[style^="--custom-gradient-color-1"]:not([class^="role"]):style
 discord.com##span[style^="--custom-gradient-color-1"]:not([class^="role"])::after
 discord.com##span[style^="--custom-gradient-color-1"]:not([class^="role"]) > span[aria-hidden="true"]
 
+# Remove nameplates
+discord.com##div[data-list-item-id^="members-"] > div[class^="childContainer"]:remove-class(/nameplated/)
+discord.com##div[data-list-item-id^="members-"] > div[class^="childContainer"] > div[style^="background: linear-gradient"]
+
