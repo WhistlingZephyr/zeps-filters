@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/WhistlingZephyr/zeps-filters#readme",
   "dependencies": {
-    "@adguard/aglint": "^2.0.8",
-    "husky": "^9.0.11",
-    "markdownlint-cli": "^0.39.0"
+    "@adguard/aglint": "^3.0.0",
+    "husky": "^9.1.7",
+    "markdownlint-cli": "^0.45.0"
   }
 }
