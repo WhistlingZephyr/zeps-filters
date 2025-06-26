@@ -1,6 +1,6 @@
 ! Title: Zep's Filters - Discord
 ! Expires: 3 days
-! Last modified: 25 June 2025
+! Last modified: 26 June 2025
 ! Homepage: https://github.com/WhistlingZephyr/zeps-filters
 ! Issues: https://github.com/WhistlingZephyr/zeps-filters/Issues
 ! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
@@ -100,9 +100,9 @@ discord.com##[aria-roledescription="Message"]:remove-class(/potioned|zalgo/)
 discord.com##a[href="/store"] > div > div[class^="badgeContainer_"]
 
 # Remove gradient username colors
-discord.com##span[style^="--custom-gradient-color-1"]:not([class^="role"]):style(color: var(--custom-gradient-color-1) !important; animation: none !important; --custom-gradient-color-2: var(--custom-gradient-color-1) !important; --custom-gradient-color-3: var(--custom-gradient-color-1) !important)
-discord.com##span[style^="--custom-gradient-color-1"]:not([class^="role"])::after
-discord.com##span[style^="--custom-gradient-color-1"]:not([class^="role"]) > span[aria-hidden="true"]
+discord.com##[style^="--custom-gradient-color-1"]:not([class^="role"]):style(color: var(--custom-gradient-color-1) !important; animation: none !important; --custom-gradient-color-2: var(--custom-gradient-color-1) !important; --custom-gradient-color-3: var(--custom-gradient-color-1) !important)
+discord.com##[style^="--custom-gradient-color-1"]:not([class^="role"])::after
+discord.com##[style^="--custom-gradient-color-1"]:not([class^="role"]) > [aria-hidden="true"]
 
 # Remove nameplates
 discord.com##div[data-list-item-id^="members-"] > div[class^="childContainer"]:remove-class(/nameplated/)
