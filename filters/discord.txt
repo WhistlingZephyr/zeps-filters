@@ -108,3 +108,7 @@ discord.com##[style^="--custom-gradient-color-1"]:not([class^="role"]) > [aria-h
 discord.com##div[data-list-item-id^="members-"] > div[class^="childContainer"]:remove-class(/nameplated/)
 discord.com##div[data-list-item-id^="members-"] > div[class^="childContainer"] > div[style^="background: linear-gradient"]
 
+# Remove typing bar gradient
+discord.com##main[class^="chatContent_"] > form > div[class*="chatGradientBase_"]:style(background: var(--background-base-low) !important; height: 40px !important; left: 8px !important; right: 8px !important; border-radius: 8px !important;)
+discord.com##main[class^="chatContent_"] > form > [class*="chatGradient_"]:style(display: none !important;)
+
