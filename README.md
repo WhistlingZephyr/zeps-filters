@@ -27,8 +27,8 @@ You can add additional filters that this filter list doesn't activate by default
     You can remove the apps launcher & upload media icons from chat bar with:
 
     ```adblock
-    discord.com##form > div > div[class*="-channelAppLauncher"]
-    discord.com##form > div > div[class*="-channelBottomBarArea"] div[class*="-buttons"] > div[aria-label="Add Media"]
+    discord.com##form div[class*="app-launcher-entrypoint"]
+    discord.com##form div[class*="-buttons"] > div[aria-label="Add Media"]
     ```
 
 -
