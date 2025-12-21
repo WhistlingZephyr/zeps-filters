@@ -105,7 +105,7 @@ discord.com##div[data-list-item-id^="members-"] > div[class*="-childContainer"] 
 
 # Remove typing bar gradient, only show typing bar when someone is typing, show background behind slow mode text
 discord.com##main[class*="-chatContent"] div[class*="chatGradientBase"]:style(background: var(--background-base-low) !important; height: 40px !important; right: 8px !important; border-radius: 8px !important;)
-discord.com##main[class*="-chatContent"] div[class*="chatGradient"]:style(display: none !important;)
+discord.com##main[class*="-chatContent"] div[class*="chatGradientBase"]:not([class*="-chatTypingGradient"]):style(display: none !important;)
 discord.com##main[class*="-chatContent"]:has(> form > div[class*="-typing"] > div[class*="-typingDots"] > svg[class*="-ellipsis"]) div[class*="chatGradientBase"]:style(left: 8px !important;)
 discord.com##main[class*="-chatContent"]:has(> form > div[class*="-typing"]:not(:has(> div[class*="-typingDots"] > svg[class*="-ellipsis"]))) div[class*="chatGradientBase"]:style(left: unset !important; width: 9rem !important;)
 
