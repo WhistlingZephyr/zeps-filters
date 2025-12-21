@@ -20,28 +20,38 @@ You can add additional filters that this filter list doesn't activate by default
     You can remove blocked messages entirely with:
 
     ```adblock
-    discord.com##[class^="groupStart_"]:has([class^="wrapper_"] > [class^="contents_"] > [class^="blockedSystemMessage_"])
+    discord.com##[class*="-groupStart"]:has([class*="-wrapper"] > [class*="-contents"] > [class*="-blockedSystemMessage"])
     ```
 
 -
-    You can remove the apps launcher icon from chat with:
+    You can remove the apps launcher & upload media icons from chat bar with:
 
     ```adblock
-    discord.com##form > div > div[class^="channelAppLauncher_"]
+    discord.com##form > div > div[class*="-channelAppLauncher"]
+    discord.com##form > div > div[class*="-channelBottomBarArea"] div[class*="-buttons"] > div[aria-label="Add Media"]
     ```
 
 -
     You can remove quick access reactions with:
 
     ```adblock
-    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :is(:has(~ [class^="separator_"]), [class^="separator_"])
+    discord.com##div[aria-roledescription="Message"] > div[class*="-buttonContainer"] > [aria-label="Message Actions"] > div > :is(:has(~ [class*="-separator"]), [class*="-separator"])
     ```
 
 -
     Or you can remove everything except the more button from message quick access with:
 
     ```adblock
-    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :not([aria-label="More"])
+    discord.com##div[aria-roledescription="Message"] > div[class*="-buttonContainer"] > [aria-label="Message Actions"] > div > :not([aria-label="More"])
+    ```
+
+-
+    You can remove store, shop, & quest buttons from DM page with:
+
+    ```adblock
+    discord.com##[aria-label="Direct Messages"] li:has(a[href="/store"])
+    discord.com##[aria-label="Direct Messages"] li:has(a[href="/shop"])
+    discord.com##[aria-label="Direct Messages"] li:has(a[href="/quest-home"])
     ```
 
 ## Development
