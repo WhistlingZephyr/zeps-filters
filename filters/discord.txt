@@ -32,7 +32,8 @@ discord.com##[class*="-reactionInner"] > [class*="-burstGlow"]
 discord.com##[class*="-reactionInner"] img:watch-attr(class):remove-class(/-hideEmoji/)
 
 # Remove nitro gifting button in textbox
-discord.com##form div[class*="-buttons"] > :is(div[class*="-container"]:has(div[class*="-trinketsIcon"]), div[class*="-spacer"])
+discord.com##form div[class*="-buttons"] > div[class*="-container"]:has(div[class*="-trinketsIcon"])
+discord.com##form div[class*="-buttons"] > div[class*="-spacer"]
 
 # Remove nitro & shop tab badges in homescreen
 discord.com##a[data-list-item-id^="private-channels-"]:is([href*="-/store"], [href*="-/shop"]) > div[class*="badge" i]
