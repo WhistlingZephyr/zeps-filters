@@ -111,3 +111,4 @@ discord.com##main[class*="-chatContent"]:has(> form > div[class*="-typing"]:not(
 
 # Remove username fonts
 discord.com##span[id^="message-username-"] [class*="-username"][class*="-dnsFont"]:style(font-family: inherit !important; letter-spacing: inherit !important; font-synthesis: inherit !important;)
+discord.com##div[id^="message-reply-context-"] [class*="-username"][class*="-dnsFont"]:style(font-family: inherit !important; letter-spacing: inherit !important; font-synthesis: inherit !important;)
