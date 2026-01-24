@@ -20,38 +20,28 @@ You can add additional filters that this filter list doesn't activate by default
     You can remove blocked messages entirely with:
 
     ```adblock
-    discord.com##[class*="-groupStart"]:has([class*="-wrapper"] > [class*="-contents"] > [class*="-blockedSystemMessage"])
+    discord.com##[class^="groupStart_"]:has([class^="wrapper_"] > [class^="contents_"] > [class^="blockedSystemMessage_"])
     ```
 
 -
-    You can remove the apps launcher & upload media icons from chat bar with:
+    You can remove the apps launcher icon from chat with:
 
     ```adblock
-    discord.com##form div[class*="app-launcher-entrypoint"]
-    discord.com##form div[class*="-buttons"] > div[aria-label="Add Media"]
+    discord.com##form > div > div[class^="channelAppLauncher_"]
     ```
 
 -
     You can remove quick access reactions with:
 
     ```adblock
-    discord.com##div[aria-roledescription="Message"] > div[class*="-buttonContainer"] > [aria-label="Message Actions"] > div > :is(:has(~ [class*="-separator"]), [class*="-separator"])
+    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :is(:has(~ [class^="separator_"]), [class^="separator_"])
     ```
 
 -
     Or you can remove everything except the more button from message quick access with:
 
     ```adblock
-    discord.com##div[aria-roledescription="Message"] > div[class*="-buttonContainer"] > [aria-label="Message Actions"] > div > :not([aria-label="More"])
-    ```
-
--
-    You can remove store, shop, & quest buttons from DM page with:
-
-    ```adblock
-    discord.com##[aria-label="Direct Messages"] li:has(a[href="/store"])
-    discord.com##[aria-label="Direct Messages"] li:has(a[href="/shop"])
-    discord.com##[aria-label="Direct Messages"] li:has(a[href="/quest-home"])
+    discord.com##div[aria-roledescription="Message"] > div[class^="buttonContainer_"] > [aria-label="Message Actions"] > div > :not([aria-label="More"])
     ```
 
 ## Development
