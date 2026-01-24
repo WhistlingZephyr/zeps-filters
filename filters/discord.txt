@@ -1,16 +1,16 @@
 ! Title: Zep's Filters - Discord
 ! Expires: 3 days
-! Last modified: 07 January 2026
+! Last modified: 24 January 2026
 ! Homepage: https://github.com/WhistlingZephyr/zeps-filters
 ! Issues: https://github.com/WhistlingZephyr/zeps-filters/Issues
 ! License: https://github.com/WhistlingZephyr/zeps-filters/blob/main/LICENSE
 ! Description: Removes some annoyances from Discord's UI
 
 # Remove download client button
-discord.com##[data-list-id="guildsnav"] > [class*="-itemsContainer"] > [class*="-scroller"] > div:nth-last-child(2)
+discord.com##[data-list-id="guildsnav"] > [class^="itemsContainer_"] > [class*="scroller_"] > div:nth-last-child(2)
 
 # Remove voice chat toast
-discord.com##div[role="button"][class*="-bar"]
+discord.com##div[role="button"][class^="bar_"]
 
 # Remove badge from linked roles
 ! discord.com##[id^="message-username-"] [aria-label="Click to view"]
@@ -20,55 +20,51 @@ discord.com##div[role="button"][class*="-bar"]
 ! discord.com##[aria-roledescription="Message"] [aria-label="Add Super Reaction"]
 
 # Remove super reaction effects
-discord.com##[class*="-effectsWrapper"]
+discord.com##[class^="effectsWrapper_"]
 
 # Remove super reaction shake
-discord.com##[class*="-reaction"]:watch-attr(class):remove-class(/shakeReaction\_/)
+discord.com##[class^="reaction_"]:watch-attr(class):remove-class(/shakeReaction\_/)
 
 # Remove super reaction glow
-discord.com##[class*="-reactionInner"] > [class*="-burstGlow"]
+discord.com##[class^="reactionInner_"] > [class^="burstGlow_"]
 
 # Stop super reaction's original emoji from hiding on hover
-discord.com##[class*="-reactionInner"] img:watch-attr(class):remove-class(/-hideEmoji/)
+discord.com##[class^="reactionInner_"] img:watch-attr(class):remove-class(/-hideEmoji/)
 
 # Remove nitro gifting button in textbox
-discord.com##form div[class*="-buttons"] > div[class*="-button"]:not([class*="expression-picker-chat-input-button"])
-discord.com##form div[class*="-buttons"] > div[class*="-spacer"]
+discord.com##form div[class^="buttons_"] > div[class^="button_"]:not([class*="expression-picker-chat-input-button"])
+discord.com##form div[class^="buttons_"] > div[class^="spacer_"]
 
 # Remove nitro & shop tab badges in homescreen
-discord.com##a[data-list-item-id^="private-channels-"]:is([href*="-/store"], [href*="-/shop"]) > div[class*="badge" i]
+discord.com##a[data-list-item-id^="private-channels-"]:is([href^="/store"], [href^="/shop"]) > div[class*="badge" i]
 
 # Remove go to shop banner on profile popout
-discord.com##[class*="-containerWrapper"]:has([aria-label="Go to Shop"])
+discord.com##[class^="containerWrapper_"]:has([aria-label="Go to Shop"])
 
 # Remove go to shop banner in profile customization
-discord.com##[class*="-settingsPage"] > div > [class*="-container"][style^="background-image:"]:has-text("Go to Shop")
+discord.com##[class^="settingsPage_"] > div > [class^="container_"][style^="background-image:"]:has-text("Go to Shop")
 
 # Remove nitro advertisement panel in profile customization
-discord.com##[class*="-settingsPage"] > div > [class*="-upsellContainer"]
+discord.com##[class^="settingsPage_"] > div > [class^="upsellContainer_"]
 
 # Remove profile animations/effects
-discord.com##[class*="-profileEffects"]
+discord.com##[class^="profileEffects_"]
 
 # Remove avatar decorations
-discord.com##div:not([class^="-previewContainer"]) > [class*="-avatarDecoration"]
+discord.com##div:not([class^="-previewContainer"]) > [class^="avatarDecoration_"]
 
 # Remove random nitro-related popouts
 discord.com##[id^="popout"]:has-text("Maybe later")
 
 # Remove locked emojis appearing in suggestions
-discord.com##[data-list-id="channel-autocomplete"]:has(> [class*="premiumSectionDivider"] > [class*="-nitroTopDividerLockContainer"]) > :is([role="option"][class*="premiumEmoji"], [class*="-premiumHeader"], [class*="premiumSectionDivider"])
+discord.com##[data-list-id="channel-autocomplete"]:has(> [class*="premiumSectionDivider_"] > [class^="nitroTopDividerLockContainer_"]) > :is([role="option"][class*="premiumEmoji_"], [class^="premiumHeader_"], [class*="premiumSectionDivider_"])
 
 # Remove locked emoji decoration in emoji picker
-discord.com###emoji-picker-grid div[class*="categorySectionNitroLocked"]:style(background: none !important)
-discord.com###emoji-picker-grid div[class*="-nitro"]
+discord.com###emoji-picker-grid div[class*="categorySectionNitroLocked_"]:style(background: none !important)
+discord.com###emoji-picker-grid div[class^="nitro"]
 
 # Remove emoji badge in emoji picker
-discord.com###emoji-picker-tab-panel > div[class*="-emojiPicker"] > div[class*="-inspector"] > div[class*="badgeLabel"]
-
-# Remove locked emoji decoration in emoji picker
-discord.com###emoji-picker-grid div[class*="categorySectionNitroLocked"]:style(background: none !important)
-discord.com###emoji-picker-grid div[class*="-nitro"]
+discord.com###emoji-picker-tab-panel > div[class^="emojiPicker_"] > div[class^="inspector_"] > div[class*="badgeLabel"]
 
 # Remove Shop button decorations
 discord.com##[aria-label="Direct Messages"] > li:has(a[href="/shop"]):style(background: none !important)
@@ -82,33 +78,32 @@ discord.com##div[aria-label="Members"] > div:not([class])
 discord.com##div[aria-roledescription="Message"]:not(:hover) > div[id^="message-accessories-"] > div[id^="message-reactions-"] > div[aria-label="Add Reaction"]
 
 # Remove nitro advertisement in emoji picker
-discord.com###emoji-picker-grid > div > div[class*="-upsellContainer"]
+discord.com###emoji-picker-grid > div > div[class^="upsellContainer_"]
 
 # Remove confetti effects
 discord.com###simple-confetti-canvas
 discord.com##html:watch-attr(class):remove-class(confetti-mode)
-discord.com##[data-flash] > li > [class*="-emojiWrapper"]
+discord.com##[data-flash] > li > [class^="emojiWrapper_"]
 discord.com##[data-flash]:remove-class(/[fF]lash/)
 discord.com##[aria-roledescription="Message"]:remove-class(/potioned|zalgo/)
 
 # Remove nitro shop offer badge
-discord.com##a[href="/store"] > div > div[class*="-badgeContainer"]
+discord.com##a[href="/store"] > div > div[class^="badgeContainer_"]
 
 # Remove gradient username colors
-discord.com##[style^="--custom-gradient-color-1"]:not([class*="-role"]):style(color: var(--custom-gradient-color-1) !important; animation: none !important; --custom-gradient-color-2: var(--custom-gradient-color-1) !important; --custom-gradient-color-3: var(--custom-gradient-color-1) !important)
-discord.com##[style^="--custom-gradient-color-1"]:not([class*="-role"])::after
-discord.com##[style^="--custom-gradient-color-1"]:not([class*="-role"]) > [aria-hidden="true"]
+discord.com##[style^="--custom-gradient-color-1"]:not([class^="role_"]):style(color: var(--custom-gradient-color-1) !important; animation: none !important; --custom-gradient-color-2: var(--custom-gradient-color-1) !important; --custom-gradient-color-3: var(--custom-gradient-color-1) !important)
+discord.com##[style^="--custom-gradient-color-1"]:not([class^="role_"])::after
+discord.com##[style^="--custom-gradient-color-1"]:not([class^="role_"]) > [aria-hidden="true"]
 
 # Remove nameplates
-discord.com##div[data-list-item-id^="members-"] > div[class*="-childContainer"]:remove-class(/nameplated/)
-discord.com##div[data-list-item-id^="members-"] > div[class*="-childContainer"] > div[style^="background: linear-gradient"]
+discord.com##div[data-list-item-id^="members-"] > div[class^="childContainer_"]:remove-class(/nameplated/)
+discord.com##div[data-list-item-id^="members-"] > div[class^="childContainer_"] > div[style^="background: linear-gradient"]
 
 # Remove typing bar gradient, only show typing bar when someone is typing, show background behind slow mode text
-discord.com##main[class*="-chatContent"] div[class*="chatGradientBase"]:style(background: var(--background-base-low) !important; height: 40px !important; right: 8px !important; border-radius: 8px !important;)
-discord.com##main[class*="-chatContent"] div[class*="chatGradientBase"]:not([class*="-chatTypingGradient"]):style(display: none !important;)
-discord.com##main[class*="-chatContent"]:has(> form > div[class*="-typing"] > div[class*="-typingDots"] > svg[class*="-ellipsis"]) div[class*="chatGradientBase"]:style(left: 8px !important;)
-discord.com##main[class*="-chatContent"]:has(> form > div[class*="-typing"]:not(:has(> div[class*="-typingDots"] > svg[class*="-ellipsis"]))) div[class*="chatGradientBase"]:style(left: unset !important; width: 9rem !important;)
+discord.com##main[class^="chatContent_"] div[class*="chatGradientBase_"]:style(background: var(--background-base-low) !important; height: 40px !important; right: 8px !important; border-radius: 8px !important;)
+discord.com##main[class^="chatContent_"] div[class*="chatGradient_"]:style(display: none !important;)
+discord.com##main[class^="chatContent_"]:has(> form > div[class^="typing_"] > div[class^="typingDots_"] > svg[class^="ellipsis_"]) div[class*="chatGradientBase_"]:style(left: 8px !important;)
+discord.com##main[class^="chatContent_"]:has(> form > div[class^="typing_"]:not(:has(> div[class^="typingDots_"] > svg[class^="ellipsis_"]))) div[class*="chatGradientBase_"]:style(left: unset !important; width: 9rem !important;)
 
 # Remove username fonts
-discord.com##span[id^="message-username-"] [class*="-username"][class*="-dnsFont"]:style(font-family: inherit !important; letter-spacing: inherit !important; font-synthesis: inherit !important;)
-discord.com##div[id^="message-reply-context-"] [class*="-username"][class*="-dnsFont"]:style(font-family: inherit !important; letter-spacing: inherit !important; font-synthesis: inherit !important;)
+discord.com##:is([id^="message-username-"], [id^="message-reply-context-"], [class*="username_" i]) [class*="dnsFont_"]:style(font-family: inherit !important; letter-spacing: inherit !important; font-synthesis: inherit !important;)
